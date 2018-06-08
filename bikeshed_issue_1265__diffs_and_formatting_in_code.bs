@@ -1,6 +1,6 @@
 <pre class="metadata">
 Title: Diffs and Formatting in Code 
-Shortname: Y0
+Shortname: Bikeshed Issue 1265
 Revision: 0
 Group: WG21
 Audience: SG42
@@ -59,4 +59,7 @@ template &lt;typename T, <ins>, typename U</ins>&gt;
 
 </blockquote>
 </xmp>
+
+It would be really nice if we had some extension that allowed us to "escape" in
+markdown code syntax (e.g. in backticks) to introduce HTML tags.
 
