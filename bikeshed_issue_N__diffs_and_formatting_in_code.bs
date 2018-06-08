@@ -1,0 +1,62 @@
+<pre class="metadata">
+Title: Diffs and Formatting in Code 
+Shortname: Y0
+Revision: 0
+Group: WG21
+Audience: SG42
+Status: P
+Editor: Bryce Adelstein Lelbach, brycelelbach@gmail.com
+URL: /dev/null
+Markup Shorthands: markdown yes
+No Abstract: true
+Toggle Diffs: true
+</pre>
+
+<style>
+pre.highlight:not(.idl), pre.highlight:not(.idl) * { background-color: transparent; }
+code.highlight:not(.idl), code.highlight:not(.idl) * { background-color: transparent; }
+pre.highlight:not(.idl) ins { background-color: rgb(200, 250, 200); }
+code.highlight:not(.idl) ins { background-color: rgb(200, 250, 200); }
+ins, ins *, span.ins, span.ins * { background-color: rgb(200, 250, 200); color: rgb(0, 136, 0); text-decoration: none; }
+del, del *, span.del, span.del * { background-color: rgb(250, 200, 200); color: rgb(255, 0, 0); text-decoration: line-through; text-decoration-color: rgb(255, 0, 0); }
+<!-- https://stackoverflow.com/questions/3200249/html-list-style-type-dash -->
+ul { margin: 0; list-style-type: none; }
+ul > li { text-indent: -5px; }
+ul > li p { display: inline; }
+ul > li:before { content: "—"; text-indent: -5px; }
+</style>
+
+For the C++ standard, we often need to express diffs against our published
+document - both in inline `code` elements and in block `code` elements.
+Because `<`, `>`, and `&` are common symbols in C++, switching from backticks
+(e.g.  single backtick for inline `code` and triple backtick for block `code`)
+to `code` elements is problematic, because we have to escape `<`, `>`, and `&`.
+
+Additionally, we sometimes need to be able to add formatting (such as italics
+or non-monospaced font) in `code` blocks - for example, to describe something that
+is implementation defined or exposition only.
+
+For example, to express something like this:
+
+<blockquote>
+
+<pre><code>
+template &lt;typename T, <ins>, typename U</ins>&gt;
+<i>implementation-defined</i> foo(T&amp;&amp; t<ins>, U&amp;&amp; u</ins>)<del> noexcept</del>;
+</code></pre>
+
+</blockquote>
+
+I have to write this:
+
+<xmp>
+<blockquote>
+
+<pre><code>
+template &lt;typename T, <ins>, typename U</ins>&gt;
+<i>implementation-defined</i> foo(T&amp;&amp; t<ins>, U&amp;&amp; u</ins>)<del> noexcept</del>;
+</code></pre>
+
+</blockquote>
+</xmp>
+
