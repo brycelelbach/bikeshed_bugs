@@ -1,0 +1,29 @@
+<pre class='metadata'>
+Group: WG21
+Title: Left Angle Bracket Parse Error
+Shortname: Bikeshed Issue 1273
+Revision: 0
+Audience: SG42
+Status: P
+Editor: Bryce Adelstein Lelbach, brycelelbach@gmail.com
+URL: /dev/null
+Markup Shorthands: markdown yes
+No Abstract: true
+</pre>
+
+This code:
+
+```
+<ins><pre><code>
+&lt;<span>XY</span>&gt;;
+</code></pre></ins>
+```
+
+gets misparsed to:
+
+<ins><pre><code>
+&lt;<span>XY</span>&gt;;
+</code></pre></ins>
+
+Note the `X` has been eaten and turned into a `<`.
+
