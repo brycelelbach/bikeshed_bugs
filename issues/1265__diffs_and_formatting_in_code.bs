@@ -9,6 +9,7 @@ URL: https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.c
 Editor: Bryce Adelstein Lelbach, brycelelbach@gmail.com
 Markup Shorthands: markdown yes
 No Abstract: true
+Boilerplate: style-syntax-highlighting off
 </pre>
 
 <style>
@@ -40,7 +41,7 @@ For example, to express something like this:
 <blockquote>
 
 <pre><code>
-template &lt;typename T, <ins>, typename U</ins>&gt;
+template &lt;typename T<ins>, typename U</ins>&gt;
 <i>implementation-defined</i> foo(T&amp;&amp; t<ins>, U&amp;&amp; u</ins>)<del> noexcept</del>;
 </code></pre>
 
@@ -52,7 +53,7 @@ I have to write this:
 <blockquote>
 
 <pre><code>
-template &lt;typename T, <ins>, typename U</ins>&gt;
+template &lt;typename T<ins>, typename U</ins>&gt;
 <i>implementation-defined</i> foo(T&amp;&amp; t<ins>, U&amp;&amp; u</ins>)<del> noexcept</del>;
 </code></pre>
 

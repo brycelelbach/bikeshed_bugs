@@ -9,6 +9,7 @@ URL: https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.c
 Editor: Bryce Adelstein Lelbach, brycelelbach@gmail.com
 Markup Shorthands: markdown yes
 No Abstract: true
+Boilerplate: style-syntax-highlighting off
 </pre>
 
 This code:
