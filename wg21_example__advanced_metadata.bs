@@ -1,0 +1,22 @@
+<pre class='metadata'>
+Title: Your Paper Title
+Shortname: P1234
+Revision: 0
+Status: P
+Group: WG21
+Audience: SG42
+URL: http://wg21.link/P1234r0
+Issue Tracking: GitHub https://github.com/yourgithub/yourrepo/issues
+Date: 2018-07-04
+Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
+Editor: Your Coauthor, Your Coauthor's Company http://example.com/your-coauthors-company, your-coauthors-email@example.com, http://example.com/your-coauthors-personal-website
+Markup Shorthands: markdown yes
+No Abstract: yes
+Toggle Diffs: yes
+Boilerplate: style-syntax-highlighting off
+</pre>
+
+# Introduction # {#intro}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
