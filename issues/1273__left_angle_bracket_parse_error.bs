@@ -5,7 +5,7 @@ Revision: 1
 Status: P
 Group: WG21
 Audience: SG42
-URL: https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/brycelelbach/bikeshed_examples/issues/1273__left_angle_bracket_parse_error.bs
+URL: https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/brycelelbach/bikeshed_examples/master/issues/1273__left_angle_bracket_parse_error.bs
 Editor: Bryce Adelstein Lelbach, brycelelbach@gmail.com
 Markup Shorthands: markdown yes
 No Abstract: true
