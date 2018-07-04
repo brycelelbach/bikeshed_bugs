@@ -1,12 +1,12 @@
 <pre class="metadata">
-Group: WG21
 Title: Diffs and Formatting in Code 
 Shortname: Bikeshed Issue 1265
-Revision: 0
-Audience: SG42
+Revision: 1
 Status: P
+Group: WG21
+Audience: SG42
+URL: https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/brycelelbach/bikeshed_examples/issues/1265__diffs_and_formatting_in_code.bs
 Editor: Bryce Adelstein Lelbach, brycelelbach@gmail.com
-URL: /dev/null
 Markup Shorthands: markdown yes
 No Abstract: true
 </pre>

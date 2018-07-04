@@ -5,7 +5,7 @@ Revision: 0
 Status: P
 Group: WG21
 Audience: SG42
-URL: http://wg21.link/P1234r0
+URL: http://wg21.link/P1234R0
 Issue Tracking: GitHub https://github.com/yourgithub/yourrepo/issues
 Date: 2018-07-04
 Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
