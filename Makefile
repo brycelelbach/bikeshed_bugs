@@ -9,7 +9,7 @@ remote: setup
 	find . -name "*.bs" -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c "curl https://api.csswg.org/bikeshed/ -F force=1 -F file=@{}.bs > $(BUILDDIR)/\`basename {}\`.html"
 
 local: setup
-	find . -name "*.bs" -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c "bikeshed -f spec {}.bs $(BUILDDIR)/\`basename {}\`.html" 
+	find . -name "*.bs" -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c "bikeshed -f spec {}.bs $(BUILDDIR)/\`basename {}\`.html"
 
 clean:
 	rm $(BUILDDIR)/*
