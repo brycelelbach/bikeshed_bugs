@@ -23,8 +23,14 @@ This code:
 gets misparsed to:
 
 <ins><pre><code>
-&lt;<span>XY</span>&gt;;
+&lt;<span>&lt;Y</span>&gt;;
 </code></pre></ins>
 
 Note the `X` has been eaten and turned into a `<`.
+
+If the code below matches the above, then this bug has not been fixed.
+
+<ins><pre><code>
+&lt;<span>XY</span>&gt;;
+</code></pre></ins>
 
