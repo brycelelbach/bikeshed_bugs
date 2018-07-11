@@ -5,9 +5,8 @@ Revision: 0
 Status: P
 Group: WG21
 Audience: SG42
-URL: http://wg21.link/P1234R0
-Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
-Editor: Your Coauthor, Your Coauthor's Company http://example.com/your-coauthors-company, your-coauthors-email@example.com, http://example.com/your-coauthors-personal-website
+Editor: Your Name, Your Company https://example.com/your-company, your-email@example.com, https://example.com/your-personal-website
+Editor: Your Coauthor, Your Coauthor's Company https://example.com/your-coauthors-company, your-coauthors-email@example.com, https://example.com/your-coauthors-personal-website
 Markup Shorthands: markdown yes
 No Abstract: true
 </pre>
