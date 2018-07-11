@@ -49,7 +49,7 @@ template &lt;typename T<ins>, typename U</ins>&gt;
 
 I have to write this:
 
-<xmp>
+```
 <blockquote>
 
 <pre><code>
@@ -58,7 +58,7 @@ template &lt;typename T<ins>, typename U</ins>&gt;
 </code></pre>
 
 </blockquote>
-</xmp>
+```
 
 It would be really nice if we had some extension that allowed us to "escape" in
 markdown code syntax (e.g. in backticks) to introduce HTML tags.

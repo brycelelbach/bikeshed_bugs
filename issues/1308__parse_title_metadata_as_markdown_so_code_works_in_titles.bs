@@ -1,0 +1,52 @@
+<pre class="metadata">
+Title: Parse Title Metadata as Markdown so `<code>` Works in Titles
+H1: Parse Title Metadata as Markdown so <code>&lt;code&gt;</code> Works in Titles
+Shortname: Bikeshed Issue 1308
+Revision: 0
+Status: P
+Group: WG21
+Audience: SG42
+URL: https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/brycelelbach/bikeshed_examples/master/issues/1308__parse_title_metadata_as_markdown_so_code_works_in_titles.bs
+Markup Shorthands: markdown yes
+No Abstract: true
+Boilerplate: style-syntax-highlighting off
+</pre>
+
+It would be awesome if the Title metadata field was parsed as markdown so that
+putting markup, especially inline code, would work easily and without any tricks.
+
+Today, you have two options. You can do something like this to get markup in
+your title:
+
+```
+<pre class="metadata">
+Title: Parse Title Metadata as Markdown so <code>&lt;code&gt;</code> Works
+</pre>
+```
+
+However, since the Title metadata field populates both a documents `<title>`
+and `<h1>`, there's a caveat - your `<title>` will look ugly. In Firefox and
+Chrome, your document will have the HTML tags in the tab title.
+
+You can also do something like this:
+
+```
+<pre class="metadata">
+Title: Parse Title Metadata as Markdown so <code>&lt;code&gt;</code> Works
+H1: Parse Title Metadata as Markdown so `<code>` Works
+</pre>
+```
+
+Then, your `<title>` and `<h1>` element will be populated from the respective
+metadata field, and everything will be fine. However, this is still a little
+unpleasant to write and repetitive.
+
+See [related issue #1306](https://github.com/tabatkins/bikeshed/issues/1306) on
+the H1 metadata field and `[H1]` text macro.
+
+I imagine this feature would work like so:
+
+- Parse the Title metadata field as markdown, and put the result into the `[TITLE]` text macro.
+- If there is no H1 metadata field, the `[H1]` text macro expands to the raw (unparsed) Title metadata field's content.
+- If there is a H1 metadata field, the `[H1]` text macro expands to the raw (unparsed) H1 metadata field's content.
+
